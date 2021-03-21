@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+<!-- Navigation -->
+    <nav id="navbar">
+      <div class="logo" id="logo">
+        <a href="#">
+        <img src="./images/logo.svg" alt="Blogr logo">
+      </a>
+        </div>
+      
+      <div id="main-nav">
+        <ul class="navigation">
+          <li class="navlink has-dropdowns">
+            Product
+            <img
+              src="./images/icon-arrow-dark.svg"
+              alt="Arrow icon for dropdown"
+              class="arrow-icon m-hidden">
+            <img
+              src="./images/icon-arrow-light.svg"
+              alt="Arrow icon for the for mobile"
+              class="arrow-icon d-hidden">
+            <ul class="nav-dropdown">
+              <li>Overview</li>
+              <li>Pricing</li>
+              <li>Marketplace</li>
+              <li>Features</li>
+              <li>Integrations</li>
+            </ul>
+          </li>
+          <li class="navlink has-dropdowns">
+            Company
+            <img
+              src="./images/icon-arrow-dark.svg"
+              alt="Arrow icon for dropdown"
+              class="arrow-icon m-hidden">
+            <img
+              src="./images/icon-arrow-light.svg"
+              alt="Arrow icon for the for mobile"
+              class="arrow-icon d-hidden">
+            <ul class="nav-dropdown">
+              <li>About</li>
+              <li>Team</li>
+              <li>Blog</li>
+              <li>Careers</li>
+            </ul>
+          </li>
+          <li class="navlink has-dropdowns">
+            Connect
+            <img
+              src="./images/icon-arrow-dark.svg"
+              alt="Arrow icon for dropdown"
+              class="arrow-icon m-hidden">
+            <img
+              src="./images/icon-arrow-light.svg"
+              alt="Arrow icon for the for mobile"
+              class="arrow-icon d-hidden">
+            <ul class="nav-dropdown">
+              <li>Contact</li>
+              <li>Newsletter</li>
+              <li>Linkiden</li>
+            </ul>
+          </li>
+        </ul>
+        <form id="nav-form" class="d-flex">
+          <button class="btn">Login</button>
+          <button class="btn btn-primary">Signup</button>
+        </form>
+      </div>
+      <div id="toggler" class="m-hidden">
+        <img
+          src="./images/icon-hamburger.svg"
+          id="togger-btn"
+          alt="Icon humburbger">
+      </div>
+    </nav>
+<!-- Navigation ends-->
+
+<!-- Hero-->
+  <div class="hero" id="home">
+    <h1>A mordern publishing platform</h1>
+    <p>Grow your audience and build online board</p>
+    <form class="intro-btn-container">
+      <button class="btn btn-primary">Start for free</button>
+      <button class="btn btn-border">Learn more</button>
+    </form>
+  </div>
+
+  </header>
+
+  <section class="intro">
+    <h2>Designed for your future</h2>
+    <div class="row mobile-reverse">
+      <div class="w-50">
+        <div class="text-group">
+          <h3>Introducing an extensible editor</h3>
+          <p>
+            Blogr features an exceedingly intuitive interface which let you
+            focu on one thing: creating content. The editor supports
+            managment of multiple blogs and allow easy manipuulation of
+            embeds such as images, videos, and Markdown. Extensibility with
+            plugiins and thems provide easy ways to add functionality or
+            change the look of a blog.
+          </p>
+        </div>
+        <div class="text-group">
+          <h3>Robust content managment</h3>
+          <p>
+            Flexible content managment enables users to easilty move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you're in full control.
+          </p>
+        </div>
+      </div>
+      <div class="w-50 d-flex relative-container">
+        <img
+          src="images/illustration-editor-desktop.svg"
+          class="intro-img-half"
+          alt="Illustration editor desktop">
+      </div>
+    </div>
+  </section>
+
+  <section
+        class="intro-section intro-section-reverse darker-container rounded-bottom">
+        <div class="row">
+          <div class="w-50 relative-container">
+            <img
+              src="images/illustration-phones.svg"
+              class="phone-img img-res"
+              alt="Phones illustration">
+          </div>
+          <div class="w-50 d-flex">
+            <div class="text-group">
+              <h3>State of the Art Infrastructure</h3>
+              <p>
+                With reliability and speed in mind, worldwide data centes
+                provide a backbone for ulta-fast connectivity. This ensures your
+                site will load instantly, no matter where your readers are,
+                keeping your site competitive.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-section">
+        <div class="row">
+          <div class="w-50 d-flex relative-container">
+            <img
+              src="images/illustration-laptop-desktop.svg"
+              class="intro-img-half reverse-img"
+              alt="Illustration laptop desktop">
+          </div>
+          <div class="w-50">
+            <div class="text-group">
+              <h3 class="text-blue">Free, open, simple</h3>
+              <p>
+                Blogr is free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code sytanc highlighting. RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and relatively easy to
+                learn
+              </p>
+            </div>
+            <div class="text-group">
+              <h3 class="text-blue">Powerful tooling</h3>
+              <p>
+                Batteries included. We built a simpe and straightforwd CLI tool
+                that makes customization and deployment a breeze, but capablr
+                producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <footer id="footer" class="d-flex">
+        <div class="row">
+          <div class="w-25">
+            <div class="logo">
+              <img src="images/logo.svg" alt="Blogr logo" />
+            </div>
+          </div>
+          <div class="w-25">
+            <ul class="footer-nav">
+              <h4>Product</h4>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="w-25">
+            <ul class="footer-nav">
+              <h4>Company</h4>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="w-25">
+            <ul class="footer-nav">
+              <h4>Connect</h4>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">Linkedin</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="attribution row d-flex">
+          Challenge by &nbsp;
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by &nbsp;
+          <a href="https://www.linkedin.com/in/rosemary-nwosu-ihueze/"
+            >Rosemary</a>.
+        </div>
+      </footer>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/style.js"></script>
+</body>
+</html>
